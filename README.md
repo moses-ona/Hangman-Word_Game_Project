@@ -1,8 +1,10 @@
 # Hangman-Word_Game_Project
+
 This is a simple hangman game. It was written in python language, using the class method. To play, just guess a letter by typing your guess on your keyboard. If you guess incorrectly 5 times, you lose. If you guess the word before that happens, you win.
 Below is a flow of how the game is programmed:
 First, the class Hangman is defined - <class Hangman>
 Next, the game attributes, including number of lives, list of words to be selected randomly, a list of of letters of the word guessed represented initially by dash. The __init__ method is used to initialise all attributes that are relevant to implementing the game.
+
 def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
@@ -90,7 +92,7 @@ def __init__(self, word_list, num_lives=5):
             else:
                 print(f"You have {self.num_lives} chances left")
   
-  Next, the instructional guidance to the player is defined using the ask_letter method. This guides the player on how to play the game. The player's input is validated by calling the check_letter method.
+Next, the instructional guidance to the player is defined using the ask_letter method. This guides the player on how to play the game. The player's input is validated by calling the check_letter method.
   
   def ask_letter(self):
         '''
@@ -112,7 +114,7 @@ def __init__(self, word_list, num_lives=5):
                 print('Please, enter a character')
         self.check_letter(letter)
   
-  Now, the code required to start playing the game is inserted:
+Now, the code required to start playing the game is inserted and by calling the class Hangman:
   
   def play_game(word_list):
     # As an aid, part of the code is already provided:
