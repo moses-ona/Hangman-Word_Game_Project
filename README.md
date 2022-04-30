@@ -5,6 +5,7 @@ Below is a flow of how the game is programmed:
 First, the class Hangman is defined - <class Hangman>
 Next, the game attributes, including number of lives, list of words to be selected randomly, a list of of letters of the word guessed represented initially by dash. The __init__ method is used to initialise all attributes that are relevant to implementing the game.
 
+'''
 def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
@@ -45,11 +46,12 @@ def __init__(self, word_list, num_lives=5):
       ===''']
         print(f"The mistery word has {self.num_letters} characters")
         print(f"You have {self.num_lives} lives")
-        print(f"{self.word_guessed}")
+        print(f"{self.word_guessed}") '''
   
   next, the rule of the game is defined using the check_letter method.
   
-  def check_letter(self, letter) -> None:
+  '''
+  def check_letter(self, letter) -> None:'''
         '''
         Checks if the letter is in the word.
         If it is, it replaces the '_' in the word_guessed list with the letter.
@@ -90,11 +92,12 @@ def __init__(self, word_list, num_lives=5):
             elif self.num_lives == 0:
                 pass
             else:
-                print(f"You have {self.num_lives} chances left")
+                print(f"You have {self.num_lives} chances left")'''
+
   
 Next, the instructional guidance to the player is defined using the ask_letter method. This guides the player on how to play the game. The player's input is validated by calling the check_letter method.
-  
-  def ask_letter(self):
+  '''
+  def ask_letter(self):'''
         '''
         Asks the user for a letter and checks two things:
         1. If the letter has already been tried
@@ -112,10 +115,10 @@ Next, the instructional guidance to the player is defined using the ask_letter m
                 break
             else:
                 print('Please, enter a character')
-        self.check_letter(letter)
+        self.check_letter(letter)'''
   
 Now, the code required to start playing the game is inserted and by calling the class Hangman:
-  
+ ''' 
   def play_game(word_list):
     # As an aid, part of the code is already provided:
     print("WELCOME TO THE HANGMAN GAME. LET'S GO!")
@@ -132,4 +135,4 @@ Now, the code required to start playing the game is inserted and by calling the 
   
   if __name__ == '__main__':
     word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
-    play_game(word_list)
+    play_game(word_list)'''
