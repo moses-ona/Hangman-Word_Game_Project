@@ -43,7 +43,7 @@ class Hangman:
     '''
 
 
-    
+
     def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
@@ -130,11 +130,7 @@ class Hangman:
             else:
                 print(f"You have {self.num_lives} chances left")
 
-        # TODO 3: Check if the letter is in the word. TIP: You can use the lower() method to convert the letter to lowercase
-        # TODO 3: If the letter is in the word, replace the '_' in the word_guessed list with the letter
-        # TODO 3: If the letter is in the word, the number of UNIQUE letters in the word that have not been guessed yet has to be reduced by 1
-        # TODO 3: If the letter is not in the word, reduce the number of lives by 1
-        # Be careful! A letter can contain the same letter more than once. TIP: Take a look at the index() method in the string class
+
         
 
     def ask_letter(self):
@@ -158,7 +154,7 @@ class Hangman:
         self.check_letter(letter)
 
 def play_game(word_list):
-    # As an aid, part of the code is already provided:
+    
     print("WELCOME TO THE HANGMAN GAME. LET'S GO!")
     game = Hangman(word_list, num_lives=5)
     while True:
@@ -170,15 +166,6 @@ def play_game(word_list):
         else:
             print('Congratulations! You won!')
             break  
-
-    # TODO 2: To test this task, upon initialization, two messages should be printed 
-    # TODO 3: To test this task, you call the ask_letter method and check if the letter is in the word
-    
-    # TODO 4: Iteratively ask the user for a letter until the user guesses the word or runs out of lives
-    # If the user guesses the word, print "Congratulations! You won!"
-    # If the user runs out of lives, print "You lost! The word was {word}"
-
-
 
 if __name__ == '__main__':
     word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
