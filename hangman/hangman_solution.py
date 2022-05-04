@@ -130,9 +130,9 @@ class Hangman:
             else:
                 print(f"You have {self.num_lives} chances left")
 
-
-        
-
+    
+    
+    
     def ask_letter(self):
         '''
         Asks the user for a letter and checks two things:
